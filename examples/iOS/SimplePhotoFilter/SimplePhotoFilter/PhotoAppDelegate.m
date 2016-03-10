@@ -1,5 +1,6 @@
 #import "PhotoAppDelegate.h"
 #import "PhotoViewController.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation PhotoAppDelegate
 
@@ -7,6 +8,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
